@@ -33,7 +33,7 @@ NoteHub е уеб приложение, което позволява на по�
 ## Начално настройване
 
 ### **Стъпка 1: Клониране на хранилището**
-```
+```sh
 git clone https://github.com/nikicha2209/NoteHub.git
 cd NoteHub
 ```
@@ -45,7 +45,7 @@ cd NoteHub
   2. Изберете "Manage User Secrets".
   3. Добавете следния код в secrets.json:
 
-```
+```json
 {
   "ConnectionStrings": {
     "DefaultConnection": "Server=YOUR_SERVER_NAME;Database=NoteHubDB;Trusted_Connection=True;MultipleActiveResultSets=true"
@@ -58,7 +58,7 @@ cd NoteHub
   - Отворете **Package Manager Console**.
   - Изпълнете командата:
 
-```
+```sh
 Update-Database
 ```
 
