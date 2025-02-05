@@ -7,7 +7,7 @@ namespace NoteHub.Data
     {
         public NotesDbContext(DbContextOptions<NotesDbContext> options) : base(options) { }
 
-        public DbSet<Note> Notes { get; set; }
+        public virtual DbSet<Note> Notes { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
