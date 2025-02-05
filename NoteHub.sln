@@ -5,6 +5,10 @@ VisualStudioVersion = 17.11.35219.272
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteHub.Web", "NoteHub.Web\NoteHub.Web.csproj", "{C27C9222-759A-4E93-834F-020E72B3E774}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteHub.Data.Models", "NoteHub.Data.Models\NoteHub.Data.Models.csproj", "{884930BB-5684-4C71-9B0D-7C5BD5595768}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteHub.Data", "NoteHub.Data\NoteHub.Data.csproj", "{98FDF1D1-83DF-4CA8-BE85-4837445D31C3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{C27C9222-759A-4E93-834F-020E72B3E774}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C27C9222-759A-4E93-834F-020E72B3E774}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C27C9222-759A-4E93-834F-020E72B3E774}.Release|Any CPU.Build.0 = Release|Any CPU
+		{884930BB-5684-4C71-9B0D-7C5BD5595768}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{884930BB-5684-4C71-9B0D-7C5BD5595768}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{884930BB-5684-4C71-9B0D-7C5BD5595768}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{884930BB-5684-4C71-9B0D-7C5BD5595768}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98FDF1D1-83DF-4CA8-BE85-4837445D31C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98FDF1D1-83DF-4CA8-BE85-4837445D31C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98FDF1D1-83DF-4CA8-BE85-4837445D31C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98FDF1D1-83DF-4CA8-BE85-4837445D31C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
