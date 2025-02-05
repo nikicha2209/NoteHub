@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using NoteHub.Data;
+using NoteHub.Services.Data;
+using NoteHub.Services.Data.Interfaces;
 
 namespace NoteHub.Web
 {
@@ -9,8 +11,12 @@ namespace NoteHub.Web
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            // Регистрация на DbContext
             builder.Services.AddDbContext<NotesDbContext>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));  
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+            // Регистрация на NoteService
+            builder.Services.AddScoped<INoteService, NoteService>();
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
@@ -21,7 +27,6 @@ namespace NoteHub.Web
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
@@ -34,7 +39,7 @@ namespace NoteHub.Web
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=Note}/{action=Index}/{id?}");
 
             app.Run();
         }
