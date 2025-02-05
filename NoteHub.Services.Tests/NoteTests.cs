@@ -16,7 +16,7 @@ namespace NoteHub.Services.Tests
         public async Task Setup() 
         {
             var options = new DbContextOptionsBuilder<NotesDbContext>()
-                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString()) // Създава чиста база за всеки тест
+                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString()) 
                 .Options;
 
             _context = new NotesDbContext(options);
@@ -33,7 +33,7 @@ namespace NoteHub.Services.Tests
         }
 
         [TearDown]
-        public async Task TearDown() // ✅ Асинхронен TearDown
+        public async Task TearDown() 
         {
             await _context.Database.EnsureDeletedAsync();
             await _context.DisposeAsync();
