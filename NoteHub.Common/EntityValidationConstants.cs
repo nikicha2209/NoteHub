@@ -8,7 +8,7 @@
             public const int NoteTitleMaxLength = 100;
 
             public const int NoteContentMinLength = 10;
-            public const int NoteContentMaxLength = 10000;
+            public const int NoteContentMaxLength = 4000;
         }
     }
 }
