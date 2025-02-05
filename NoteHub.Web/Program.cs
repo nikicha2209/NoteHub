@@ -11,19 +11,15 @@ namespace NoteHub.Web
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Регистрация на DbContext
             builder.Services.AddDbContext<NotesDbContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-            // Регистрация на NoteService
             builder.Services.AddScoped<INoteService, NoteService>();
 
-            // Add services to the container.
             builder.Services.AddControllersWithViews();
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Home/Error");
