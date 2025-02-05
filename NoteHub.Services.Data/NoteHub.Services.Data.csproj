@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\NoteHub.Data\NoteHub.Data.csproj" />
+    <ProjectReference Include="..\NoteHub.Web.ViewModels\NoteHub.Web.ViewModels.csproj" />
+  </ItemGroup>
+
 </Project>
