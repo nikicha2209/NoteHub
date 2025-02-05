@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\NoteHub.Data\NoteHub.Data.csproj" />
+    <ProjectReference Include="..\NoteHub.Services.Data\NoteHub.Services.Data.csproj" />
   </ItemGroup>
 
 </Project>

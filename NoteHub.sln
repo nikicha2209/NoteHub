@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteHub.Data", "NoteHub.Dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteHub.Common", "NoteHub.Common\NoteHub.Common.csproj", "{5F80823B-35DE-43E1-8467-B4F92069EC87}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteHub.Services.Data", "NoteHub.Services.Data\NoteHub.Services.Data.csproj", "{F0F6FE91-FC94-4368-ADFF-0EAC2EA42902}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoteHub.Web.ViewModels", "NoteHub.Web.ViewModels\NoteHub.Web.ViewModels.csproj", "{4F43867E-879F-4CBA-B2F3-BBD8AB31B739}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{5F80823B-35DE-43E1-8467-B4F92069EC87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F80823B-35DE-43E1-8467-B4F92069EC87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F80823B-35DE-43E1-8467-B4F92069EC87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0F6FE91-FC94-4368-ADFF-0EAC2EA42902}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0F6FE91-FC94-4368-ADFF-0EAC2EA42902}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0F6FE91-FC94-4368-ADFF-0EAC2EA42902}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0F6FE91-FC94-4368-ADFF-0EAC2EA42902}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F43867E-879F-4CBA-B2F3-BBD8AB31B739}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F43867E-879F-4CBA-B2F3-BBD8AB31B739}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F43867E-879F-4CBA-B2F3-BBD8AB31B739}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F43867E-879F-4CBA-B2F3-BBD8AB31B739}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
